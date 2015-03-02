@@ -1,0 +1,26 @@
+body{
+	background: url("../img/bg.png");
+}
+/*layout*/
+.container{
+	width: 90%;
+	margin: 0 auto;
+	background: teal;
+}
+article section{
+	width: 46%;
+	float: left;
+	padding: 2%;
+}
+
+
+/*adaptive content*/
+iframe, img{
+	width:100%;
+	max-width: 100%;
+}
+@media (min-width: 960px) {
+#home{
+	width: 300px;
+}
+}
