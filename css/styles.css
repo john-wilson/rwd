@@ -5,7 +5,7 @@ body{
 .container{
 	width: 90%;
 	margin: 0 auto;
-	background: teal;
+	
 }
 article section{
 	width: 46%;
@@ -17,10 +17,29 @@ article section{
 /*adaptive content*/
 iframe, img{
 	width:100%;
-	max-width: 100%;
+	max-width: 50%;
 }
+
 @media (min-width: 960px) {
 #home{
 	width: 300px;
 }
+#youtube-big{
+display: block;
+}
+}
+
+
+@media (min-width: 768px) {
+#home{
+	width: 300px;
+}
+
+}
+
+@media (min-width: 480px) {
+#home{
+	width: 300px;
+}
+
 }
