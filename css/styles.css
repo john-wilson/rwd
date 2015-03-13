@@ -94,7 +94,7 @@ iframe{
 @media (max-width: 768px ) {
 	
 	/* Green BG for Testing */
-	body { background: green; }
+	body { background:; }
 	
 	/* Hide for Desktop */
 	.desktop-video {
@@ -121,6 +121,6 @@ iframe{
 @media (max-width: 480px ) {
 	
 	/* Blue BG for Testing */
-	body { background: blue; }
+	body { background: ; }
 }
 
