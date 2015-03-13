@@ -1,45 +1,126 @@
-body{
-	background: url("../img/bg.png");
+/* GLOBAL */
+body {
+	background: url("../img/bg2.png");
 }
-/*layout*/
-.container{
-	width: 90%;
+
+/* LAYOUT */
+.container {
 	margin: 0 auto;
-	
+	width: 90%; /* Designers Choice */
+	max-width: 1440px; /* Designers Choice */
 }
-article section{
-	width: 46%;
+
+article section {
 	float: left;
 	padding: 2%;
+	width: 46%;
+}
+section p{
+	font-family: 'EB Garamond', serif;
+	font-size: 1em;
+}
+header li{
+	list-style: none;
+	text-decoration: none;
+	float: left;
+	margin: 15px;
+	display: inline;
+}
+/* Adpative Content */
+iframe, img {
+	max-width: 100%;
+	width: 100%;
+	border-top: 10px;
+}
+iframe{
+	border: 10px blue; 
+}
+ h1, a{
+	font-family: 'Lobster', cursive;
 }
 
-
-/*adaptive content*/
-iframe, img{
-	width:100%;
-	max-width: 50%;
-}
-
-@media (min-width: 960px) {
-#home{
+/* Max dimensions for logo */
+#home {
+	max-width: 300px;
 	width: 300px;
 }
-#youtube-big{
-display: block;
+
+/* Large Desktop minimum */
+@media (min-width: 1025px) {
+	
+	/* Yellow BG for testing */
+	body { background: ; }
+	
+	/* Show for Desktop */
+	.desktop-video {
+		height: 320px;
+		max-width: 640px;
+		width: 640px;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		display: none;
+	}
+
+	/* Center Video */
+	main {
+		text-align: center;
+	}
+
 }
+
+/* Desktop (Standard) */
+@media (max-width: 1024px ) {
+	
+	/* Red BG for testing */
+	body { background: red; }
+	
+	/* Show for Desktop */
+	.desktop-video {
+		height: 320px;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		display: none;
+	}
+
+}
+
+/* Tablet  */
+@media (max-width: 768px ) {
+	
+	/* Green BG for Testing */
+	body { background: green; }
+	
+	/* Hide for Desktop */
+	.desktop-video {
+		display: none;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		width: 100%;
+		display: block;
+	}
+
+	/* Single Colum Tablet */
+	article section {
+		float: none;
+		width: 100%;
+		width: 100%;
+	}
+
 }
 
 
-@media (min-width: 768px) {
-#home{
-	width: 300px;
+/* Mobile (Landscape) */
+@media (max-width: 480px ) {
+	
+	/* Blue BG for Testing */
+	body { background: blue; }
 }
 
-}
-
-@media (min-width: 480px) {
-#home{
-	width: 300px;
-}
-
-}
