@@ -74,7 +74,7 @@ iframe{
 @media (max-width: 1024px ) {
 	
 	/* Red BG for testing */
-	body { background: red; }
+	body { background: ; }
 	
 	/* Show for Desktop */
 	.desktop-video {
